@@ -16,10 +16,7 @@
     "process.env.JEST_WORKER_ID": "undefined",
     "process.env.LOG_LEVEL": "undefined"
   },
-  "vars": {
-    "VITE_NETEASE_API_BASE": "https://api-enhanced-ajie9.vercel.app",
-    "VITE_QQ_API_BASE": "/api/qq"
-  },
+  "vars": {},
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",

@@ -1,4 +1,12 @@
 {
+  "durable_objects": {
+    "bindings": [
+      { "name": "QQ_QR_CHANNEL", "class_name": "QqQrChannel" }
+    ]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["QqQrChannel"] }
+  ],
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "folia-major",
   "main": "./worker/index.ts",
@@ -12,14 +20,6 @@
     "VITE_NETEASE_API_BASE": "https://api-enhanced-ajie9.vercel.app",
     "VITE_QQ_API_BASE": "/api/qq"
   },
-  "durable_objects": {
-    "bindings": [
-      { "name": "QQ_QR_CHANNEL", "class_name": "QqQrChannel" }
-    ]
-  },
-  "migrations": [
-    { "tag": "v1", "new_sqlite_classes": ["QqQrChannel"] }
-  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
